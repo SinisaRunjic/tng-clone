@@ -24,11 +24,11 @@ mongoose.connect(connection_URL, {
 })
 
 // API Endpoints
-
+/*
 app.get('/', (req, res) =>
     res.status(200).send("IDEMOOO")
 ) // root of our edpoints
-
+*/
 app.post('/cards', (req, res) => {
     const dbCard = req.body;
     Cards.create(dbCard, (err, data) => {
